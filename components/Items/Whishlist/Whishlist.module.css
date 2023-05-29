@@ -1,0 +1,60 @@
+.whishlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.whishlist .whishlist_button {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s ease;
+    background-color: #fff;
+    border-radius: 7px;
+    color: #000;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.whishlist_button :first-child {
+    font-size: 12px;
+}
+
+.whishlist_button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.whishlist_button_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.whishlist_button_text :last-child {
+    font-size: 20px;
+    min-width: max-content;
+}
+
+.whishlist_button_img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0);
+}
+
+.whishlist_button:hover .whishlist_button_img {
+    filter: brightness(100);
+}

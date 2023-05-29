@@ -1,0 +1,8 @@
+.card_platforms {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 15px;
+}

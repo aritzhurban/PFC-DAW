@@ -1,0 +1,40 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top: 5px solid #151515;
+  position: relative;
+  animation: rotar 1s infinite linear;
+}
+
+.loader::after {
+  width: 25px;
+  height: 25px;
+  content: "";
+  background-color: #151515;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotar {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
